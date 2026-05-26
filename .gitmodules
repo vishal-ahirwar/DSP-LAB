@@ -1,0 +1,6 @@
+[submodule "pico2_qgc"]
+	path = pico2_qgc
+	url = https://github.com/vishal-ahirwar/pico2_qgc.git
+[submodule "qgroundcontrol"]
+	path = qgroundcontrol
+	url = https://github.com/vishal-ahirwar/qgroundcontrol-pico2.git
