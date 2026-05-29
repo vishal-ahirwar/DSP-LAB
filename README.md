@@ -1,4 +1,4 @@
-# Signal Processing Project: Sensor Data Integration and Analysis
+# Signal Processing Project: Sensor Data Integration and Analysis (SP03 and SP10)
 
 ## Project Overview
 
