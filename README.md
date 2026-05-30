@@ -29,6 +29,19 @@ This module utilizes ambient light sensor data to evaluate the potential energy 
 *   **Photovoltaic Modeling**: Implements a PV mathematical model to predict the expected current, voltage, and overall power output of a standard solar panel.
 *   **Yield Analysis**: Logs continuous measurements over time to approximate daily energy yield, effectively highlighting the impact of dynamic variables such as shading and panel tilt angles.
 
+#### SP03 Calculation Logic (C++)
+Because the hardware relies on a TEMT6000 ambient light sensor, the firmware mathematically simulates a standard 12V (18.2 Vmp) 100W solar panel. The logic locks the system voltage and dynamically calculates Power and Current based on live irradiance:
+```cpp
+int rawLight = analogRead(TEMT6000_PIN);
+float lux = rawLight * 2.5f; 
+float irradiance = lux * 0.0079f; // Convert to W/m^2
+
+// PV Mathematical Model
+float expectedVolt = 18.2f; // Standard 12V Solar Panel Vmp
+float expectedPower = irradiance * 0.15f; // Assuming 15% solar efficiency
+float expectedCurr = (expectedVolt > 0) ? (expectedPower / expectedVolt) : 0;
+```
+
 ### SP10: Vibration Analyzer and Machinery Health Monitor
 
 Designed for predictive maintenance and mechanical analysis, this module processes inertial data to assess the operational health of machinery.
@@ -38,6 +51,33 @@ Designed for predictive maintenance and mechanical analysis, this module process
     *   **Fast Fourier Transform (FFT)**: To identify dominant frequency components and resonances.
     *   **Root Mean Square (RMS)**: To quantify overall vibration energy and severity.
     *   **Envelope Spectra**: To detect amplitude modulation often associated with bearing or gear faults.
+
+#### SP10 Calculation Logic (C++)
+The Pico 2 samples the MPU6050 at 100 Hz. It removes the static force of gravity (9.81 m/s²) to isolate dynamic vibration. It collects 64 samples in a buffer, calculates the RMS energy, and executes a real-time Fast Fourier Transform (FFT) on the microcontroller to pinpoint the peak frequency:
+```cpp
+// 1. Calculate magnitude and remove gravity
+float accelMag = sqrt(a.acceleration.x*a.acceleration.x + 
+                      a.acceleration.y*a.acceleration.y + 
+                      a.acceleration.z*a.acceleration.z) - 9.81;
+
+vReal[sampleIdx] = accelMag;
+vImag[sampleIdx] = 0.0;
+sampleIdx++;
+
+if (sampleIdx >= SAMPLES) {
+    // 2. Calculate RMS Vibration
+    float sumSq = 0;
+    for(int i=0; i<SAMPLES; i++) sumSq += (vReal[i] * vReal[i]);
+    float rms = sqrt(sumSq / SAMPLES);
+
+    // 3. Compute FFT for Peak Frequency
+    ArduinoFFT<double> FFT = ArduinoFFT<double>(vReal, vImag, SAMPLES, SAMPLING_FREQUENCY);
+    FFT.windowing(FFT_WIN_TYP_HAMMING, FFT_FORWARD);
+    FFT.compute(FFT_FORWARD);
+    FFT.complexToMagnitude();
+    double peakFreq = FFT.majorPeak();
+}
+```
 
 ## Conclusion
 
