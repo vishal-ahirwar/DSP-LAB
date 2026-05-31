@@ -1,5 +1,11 @@
 # Signal Processing Project: Sensor Data Integration and Analysis (SP03 and SP10)
+<img width="2412" height="1080" alt="Screenshot_2026-05-31-22-13-34-95_776177374ce5c790ae172ba954d64081" src="https://github.com/user-attachments/assets/1b18ebfe-7845-4983-8666-c41ea982fb99" />
 
+<img width="2412" height="1080" alt="Screenshot_2026-05-31-22-31-46-44_776177374ce5c790ae172ba954d64081" src="https://github.com/user-attachments/assets/041b2269-836c-403c-94e0-f16909f668d5" />
+
+<img width="2412" height="1080" alt="Screenshot_2026-05-31-22-33-00-71_776177374ce5c790ae172ba954d64081" src="https://github.com/user-attachments/assets/df0d603c-dc78-40ea-b00c-74d058e4ac79" />
+<img width="2412" height="1080" alt="Screenshot_2026-05-31-22-34-00-65_776177374ce5c790ae172ba954d64081" src="https://github.com/user-attachments/assets/feed0d45-0fd3-444c-a934-7b8ba7937287" />
+<img width="2412" height="1080" alt="Screenshot_2026-05-31-22-34-05-18_776177374ce5c790ae172ba954d64081" src="https://github.com/user-attachments/assets/4240e8fc-69aa-42d6-a085-6868141eea78" />
 <img width="1919" height="979" alt="image" src="https://github.com/user-attachments/assets/321a461d-421d-4ccb-b6c1-36dcb22f3493" />
 <img width="1915" height="978" alt="image" src="https://github.com/user-attachments/assets/c451dbc2-c7c0-4f84-8e91-0c3ea88934d0" />
 <img width="1919" height="980" alt="image" src="https://github.com/user-attachments/assets/1c63fd60-eaf4-488f-b8f5-269fa0aa04ea" />
@@ -10,6 +16,8 @@
 <img width="1919" height="988" alt="image" src="https://github.com/user-attachments/assets/2a66fe34-e64c-4edb-9701-b8033319857a" />
 <img width="1919" height="983" alt="image" src="https://github.com/user-attachments/assets/657ede8d-6fcb-4073-b6e0-0b699c22da34" />
 <img width="1919" height="989" alt="image" src="https://github.com/user-attachments/assets/e397da66-6fc5-426e-9486-b0841f92f769" />
+<img width="2412" height="1080" alt="Screenshot_2026-05-31-22-13-27-52_776177374ce5c790ae172ba954d64081" src="https://github.com/user-attachments/assets/4f7056c5-f3e5-4116-948c-069411dd6122" />
+
 
 ## Project Overview
 
