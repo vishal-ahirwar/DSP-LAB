@@ -1,5 +1,16 @@
 # Signal Processing Project: Sensor Data Integration and Analysis (SP03 and SP10)
 
+<img width="1919" height="979" alt="image" src="https://github.com/user-attachments/assets/321a461d-421d-4ccb-b6c1-36dcb22f3493" />
+<img width="1915" height="978" alt="image" src="https://github.com/user-attachments/assets/c451dbc2-c7c0-4f84-8e91-0c3ea88934d0" />
+<img width="1919" height="980" alt="image" src="https://github.com/user-attachments/assets/1c63fd60-eaf4-488f-b8f5-269fa0aa04ea" />
+<img width="1919" height="978" alt="image" src="https://github.com/user-attachments/assets/130bac59-fe3a-4704-a6fc-1342accf750d" />
+<img width="1919" height="992" alt="image" src="https://github.com/user-attachments/assets/9905ee2e-79ee-429d-a8ff-a563fa9803d8" />
+<img width="1919" height="981" alt="image" src="https://github.com/user-attachments/assets/2e1872ea-64b5-4e56-8486-0a19a59a1653" />
+<img width="1919" height="984" alt="image" src="https://github.com/user-attachments/assets/1993ca47-dbe9-4c65-86d2-1da8f3104f94" />
+<img width="1919" height="988" alt="image" src="https://github.com/user-attachments/assets/2a66fe34-e64c-4edb-9701-b8033319857a" />
+<img width="1919" height="983" alt="image" src="https://github.com/user-attachments/assets/657ede8d-6fcb-4073-b6e0-0b699c22da34" />
+<img width="1919" height="989" alt="image" src="https://github.com/user-attachments/assets/e397da66-6fc5-426e-9486-b0841f92f769" />
+
 ## Project Overview
 
 This project focuses on the acquisition, transmission, and analysis of sensor data for practical applications in renewable energy estimation and machinery health monitoring. The hardware foundation relies on a Raspberry Pi Pico 2 microcontroller integrated with multiple environmental and motion sensors. The system transmits telemetry data via the MAVLink protocol to QGroundControl (QGC) for real-time monitoring.
